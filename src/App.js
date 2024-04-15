@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
 import {
   FaLinkedin,
   FaTwitter,
@@ -12,6 +13,7 @@ import yourImage from "./images/graph.jpg";
 import { FaMinusCircle } from "react-icons/fa";
 import { FaPlusCircle } from "react-icons/fa";
 import { GoArrowRight } from "react-icons/go";
+import Home from "./Components/Home";
 
 function App() {
   return (
@@ -101,6 +103,9 @@ function App() {
             }}
           />
         </div>
+        <Router>
+          
+        </Router>
         <div>
           <span
             style={{
@@ -168,6 +173,7 @@ function App() {
           <span style={{ fontWeight: "bold", color: "white" }}>Contact</span>
         </div>
       </div>
+      
       <div style={{ position: "relative" }}>
         <img
           src="https://cdn.pixabay.com/photo/2018/03/10/09/45/businessman-3213659_1280.jpg"
@@ -229,7 +235,7 @@ function App() {
               width: "1240px",
               font: "inter",
               top: "60px",
-              right: "10%",
+              right: "35%",
             }}
           >
             There are a few reasons why you might want to consider investing in
@@ -404,27 +410,27 @@ function App() {
               width: "600px",
               height: "270px",
               top: "100px",
-              left: "102px",
+              left: "90px",
               borderRadius: "64px",
             }}
           >
-            <h2 style={{ color: "white", font: "inter" }}>
+            <h2 style={{position:'absolute',left:'20%', color: "white", font: "inter",textAlign:'left'}}>
               Start with a minimum
               <br />
               investment of Rs. 50,000 only
             </h2>
-            <AiFillCaretRight />
-            <span style={{ color: "white", font: "inter" }}>
+            <AiFillCaretRight style={{ position:'absolute',top:'50%',color: "white", font: "inter",left:'18%' }}/>
+            <span style={{ position:'absolute',top:'30%',color: "white", font: "inter",left:'20%' }}>
               Assured Economic Return @12% p.a.
             </span>
             <br />
-            <AiFillCaretRight />
-            <span style={{ color: "white", font: "inter" }}>
+            <AiFillCaretRight  style={{ position:'absolute',top:'31%',color: "white", font: "inter",left:'18%' }}/>
+            <span  style={{ position:'absolute',top:'40%',color: "white", font: "inter",left:'20%' }}>
               Free Bonus Brú Tokens @10% p.a.
             </span>
             <br />
-            <AiFillCaretRight />
-            <span style={{ color: "white", font: "inter" }}>
+            <AiFillCaretRight style={{ position:'absolute',top:'41%',color: "white", font: "inter",left:'18%' }}/>
+            <span style={{ position:'absolute',top:'50%',color: "white", font: "inter",left:'20%' }}>
               Karma Points for Creating Social Impact
             </span>
             <br />
@@ -434,7 +440,7 @@ function App() {
               style={{
                 position: "absolute",
                 top: "75%",
-                left: "9%",
+                left: "28%",
                 transform: "translateX(-50%)",
                 borderRadius: "25px",
                 backgroundColor: "rgba(174, 0, 171, 1)",
